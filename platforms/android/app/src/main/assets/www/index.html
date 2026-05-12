@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <title>Barcode Scanner</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 18px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 6px;
+        }
+
+        button:active {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <input
+        type="text"
+        id="barcodeText"
+        placeholder="Scanned barcode">
+
+    <button id="scanBtn">
+        Scan Barcode
+    </button>
+</div>
+
+<script src="cordova.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
